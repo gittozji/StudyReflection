@@ -33,19 +33,19 @@ public java.lang.String Employee.publicField
 文档对这两个变量的注释如下：
 
 ```
-    /**
-     * Identifies the set of all public members of a class or interface,
-     * including inherited members.
-     * @see java.lang.SecurityManager#checkMemberAccess
-     */
-    public static final int PUBLIC = 0;
+/**
+ * Identifies the set of all public members of a class or interface,
+ * including inherited members.
+ * @see java.lang.SecurityManager#checkMemberAccess
+ */
+public static final int PUBLIC = 0;
 
-    /**
-     * Identifies the set of declared members of a class or interface.
-     * Inherited members are not included.
-     * @see java.lang.SecurityManager#checkMemberAccess
-     */
-    public static final int DECLARED = 1;
+/**
+ * Identifies the set of declared members of a class or interface.
+ * Inherited members are not included.
+ * @see java.lang.SecurityManager#checkMemberAccess
+ */
+public static final int DECLARED = 1;
 ```
 
 因此带`Declared`的方法能获取本类的成员信息，而不带`Declared`的方法能获取本来和父类的成员信息，但只能是`public`修饰的成员。
