@@ -2,7 +2,6 @@
 
 
 ## 代码输出
-***
 
 ```
 --->>>通过最简单的newInstance方法生成实例，调用sayHello（）方法
@@ -28,7 +27,7 @@ public java.lang.String Employee.publicField
 ```
 
 ## 获取成员的方法
-***
+
 `Class`类提供获取`Constructor`、`Field`、`Method`等方法。关于是否带`Declared`的方法，如`getDeclaredMethods()`与`getMethods()`，其本质不同在于`Member.DECLARED`与`Member.PUBLIC`的区别。
 
 文档对这两个变量的注释如下：
