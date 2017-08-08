@@ -52,11 +52,3 @@ public java.lang.String Employee.publicField
 
 
 > 操作调用类的私有成员，需要调用`setAccessible(true)`方法，否则会抛`java.lang.IllegalAccessException`异常。
-
-
-```graphLR
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
