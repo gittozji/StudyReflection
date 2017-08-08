@@ -1,7 +1,8 @@
 # 学习反射相关知识
 
 
-- 代码输出：
+## 代码输出
+***
 
 ```
 --->>>通过最简单的newInstance方法生成实例，调用sayHello（）方法
@@ -26,7 +27,9 @@ private double Employee.salary
 public java.lang.String Employee.publicField
 ```
 
-- ```Class```类提供获取```Constructor```、```Field```、```Method```等方法。关于是否带```Declared```的方法，如```getDeclaredMethods()```与```getMethods()```，其本质不同在于```Member.DECLARED```与```Member.PUBLIC```的区别。
+## 获取成员的方法
+***
+`Class`类提供获取`Constructor`、`Field`、`Method`等方法。关于是否带`Declared`的方法，如`getDeclaredMethods()`与`getMethods()`，其本质不同在于`Member.DECLARED`与`Member.PUBLIC`的区别。
 
 文档对这两个变量的注释如下：
 
@@ -46,7 +49,15 @@ public java.lang.String Employee.publicField
     public static final int DECLARED = 1;
 ```
 
-因此带```Declared```的方法能获取本类的成员信息，而不带```Declared```的方法能获取本来和父类的成员信息，但只能是```public```修饰的成员。
+因此带`Declared`的方法能获取本类的成员信息，而不带`Declared`的方法能获取本来和父类的成员信息，但只能是`public`修饰的成员。
 
 
-- 操作调用类的私有成员，需要调用```setAccessible(true)```方法，否则会抛```java.lang.IllegalAccessException```异常。
+> 操作调用类的私有成员，需要调用`setAccessible(true)`方法，否则会抛`java.lang.IllegalAccessException`异常。
+
+
+```graphLR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
