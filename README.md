@@ -48,7 +48,7 @@ public static final int PUBLIC = 0;
 public static final int DECLARED = 1;
 ```
 
-因此带`Declared`的方法能获取本类的成员信息，而不带`Declared`的方法能获取本来和父类的成员信息，但只能是`public`修饰的成员。
+因此带`Declared`的方法能获取本类的成员信息，而不带`Declared`的方法能获取本类和父类的成员信息，但只能是`public`修饰的成员。
 
 
 > 操作调用类的私有成员，需要调用`setAccessible(true)`方法，否则会抛`java.lang.IllegalAccessException`异常。
